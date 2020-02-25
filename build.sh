@@ -1,7 +1,7 @@
 # builds container from current tag. pushes to dockerhub if credential provided as env variables
 TAG=$(git describe --tags --abbrev=0) &&
 
-docker build shukriadams/trusty-daemon-backup . &&
+docker build -t shukriadams/trusty-daemon-backup . &&
 
 docker tag shukriadams/trusty-daemon-backup:latest shukriadams/trusty-daemon-backup:$TAG &&
 
