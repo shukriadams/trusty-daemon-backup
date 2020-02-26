@@ -4,6 +4,7 @@
 
 Backup flavor of trusty-daemon, pre-installed with tools for backing up
 - duplicty
+- S3
 - ftp
 
 ## Use
