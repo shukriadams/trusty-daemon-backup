@@ -1,6 +1,7 @@
 FROM shukriadams/trusty-daemon:0.0.5
 
-RUN apt-get install duplicity -y \
+RUN apt-get update \
+    && apt-get install duplicity -y \
     && apt-get install python-boto -y \
     && apt-get install lftp -y \
     && apt-get install zip -y \
